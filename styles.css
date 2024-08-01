@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #e0e0e0;
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 1200px; /* Limitar el ancho máximo */
+    margin: 20px auto; /* Añadir margen superior e inferior */
+    padding: 20px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #9b59b6, #f39c12); /* Gradiente púrpura con anaranjado */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Añadir margen inferior */
+}
+
+/* Formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0; /* Padding superior e inferior añadido */
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 16px;
+    margin: 0 10px; /* Ajustar el margen horizontal */
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9b59b6; /* Púrpura */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px; /* Añadir margen superior */
+}
+
+button:hover {
+    background-color: #8e44ad; /* Púrpura más oscuro */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background: #9b59b6; /* Púrpura */
+    color: #fff;
+    font-weight: bold;
+}
+
+thead th {
+    background: #9b59b6; /* Púrpura */
+    color: #fff;
+}
+
+/* Estilos para la tabla de gastos */
+#expensesTable {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+#expensesTable td {
+    text-align: left;
+}
+
+/* Estilos para la tabla de totales */
+#monthlyTotals {
+    border: none;
+    width: 100%;
+}
+
+#monthlyTotals th, #monthlyTotals td {
+    padding: 8px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+#monthlyTotals th {
+    background: #9b59b6; /* Púrpura */
+    color: #fff;
+    font-weight: bold;
+}
+
+#monthlyTotals td {
+    background: #333;
+}
+
+/* Título de la tabla de totales */
+#monthlyTotalsTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #9b59b6; /* Púrpura */
+    text-align: center; /* Centrar título */
+}

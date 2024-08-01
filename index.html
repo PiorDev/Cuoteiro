@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuoteiro - Calculadora de Gastos Mensuales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>Cuoteiro - Calculadora de Gastos Mensuales</header>
+        <form id="expenseForm">
+            <label for="description">Descripción:</label>
+            <input type="text" id="description" required>
+            
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" step="0.01" required>
+            
+            <label for="installments">Cuotas:</label>
+            <input type="number" id="installments" min="1" required>
+            
+            <label for="startMonth">Mes Inicial:</label>
+            <select id="startMonth" required>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+            
+            <button type="submit">Agregar Gasto</button>
+        </form>
+        
+        <table id="expensesTable">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Enero</th>
+                    <th>Febrero</th>
+                    <th>Marzo</th>
+                    <th>Abril</th>
+                    <th>Mayo</th>
+                    <th>Junio</th>
+                    <th>Julio</th>
+                    <th>Agosto</th>
+                    <th>Septiembre</th>
+                    <th>Octubre</th>
+                    <th>Noviembre</th>
+                    <th>Diciembre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán las filas dinámicamente -->
+            </tbody>
+        </table>
+        
+        <div id="monthlyTotalsTitle">Gastos Totales por Mes</div>
+        <table id="monthlyTotals">
+            <tbody>
+                <!-- Aquí se mostrarán los totales mensuales -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
